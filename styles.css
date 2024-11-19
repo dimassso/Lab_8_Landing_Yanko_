@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 250px;
+    height: 35px;
+}
+
+.search-bar button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    background: #337ab7;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav li {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.text-block {
+    width: 300px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0; /* Забираємо відступи з зовнішніх боків */
+    margin-bottom: 40px;
+}
+
+.text-block h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin: 0; /* Забираємо відступи всередині заголовка */
+}
+
+.text-block a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0; /* Забираємо відступи з посилання */
+}
+
+.main-image {
+    width: 960px;
+    height: 400px;
+    background: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0; /* Забираємо відступи з усіх боків */
+    margin-bottom: 40px; /* Залишаємо відступ знизу */
+    padding: 0; /* Прибираємо внутрішні відступи */
+}
+
+.highlight {
+    display: flex;
+    gap: 0; /* Забираємо відстань між елементами */
+    margin: 0; /* Якщо є відступи між .text-block і .main-image, забираємо їх тут */
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.thumbnails div {
+    width: 225px;
+    height: 180px;
+    background: #444;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Відстань між банерами */
+    padding: 20px;
+}
+
+
+.white-banner h2 {
+    font-size: 18px;
+    margin-bottom: 5px; /* Відступ між заголовком і посиланням */
+}
+
+.white-banner a {
+    display: block; /* Робить посилання блочним елементом */
+    color: #007bff; /* Колір посилання */
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 0px; /* Відступ зліва */
+}
+
+
+/* Новий макет */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-item {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.text-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.video-column {
+    width: 300px;
+    text-align: center; /* Центрує відео та текст */
+    position: relative; /* Встановлює контекст для використання left */
+    left: -150px;
+}
+
+.video {
+    background: #ddd;
+    width: 300px;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Відступ між відео та текстом */
+}
+
+.video-description {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px; /* Відступ між відео та текстом */
+}
+
+.banners-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Відстань між банерами */
+}
+
+.banner-item {
+    display: flex;
+    align-items: center;  /* Вирівнює елементи по вертикалі */
+    gap: 10px;  /* Відстань між банером і текстом справа */
+}
+
+.banner {
+    background: #333;  /* Темно-сірий фон банера */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;  /* Вирівнює текст по вертикалі */
+    justify-content: center;  /* Вирівнює текст по горизонталі */
+    border: 1px solid #ccc;  /* Світліший контур для контрасту */
+}
+
+.banner-text {
+    font-size: 14px;
+    color: #fff;  /* Білий текст */
+    text-align: center; /* Центрує текст всередині банера */
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banner-description {
+    font-size: 16px;
+    color: #333;  /* Чорний текст для опису */
+    margin-bottom: 5px; /* Відступ між описом і посиланням */
+}
+
+.view-profile {
+    font-size: 14px;
+    color: #007BFF; /* Колір посилання */
+    text-decoration: none; /* Без підкреслення */
+}
+
+.view-profile:hover {
+    text-decoration: underline; /* Підкреслюємо посилання при наведенні */
+}
+
+
+
+
+/* Статичний сірий банер в кінці сторінки */
+.static-banner {
+    background: #ccc; /* Сірий фон */
+    height: 62px; /* Висота банера */
+    display: flex;
+    justify-content: space-between; /* Вирівнювання тексту по краях */
+    align-items: center; /* Вирівнювання тексту по вертикалі */
+    padding: 0 20px; /* Відступи по краях */
+    margin-top: 20px; /* Відступ зверху для розділення від попередніх елементів */
+    font-size: 16px; /* Розмір тексту */
+    color: #333; /* Колір тексту */
+}
+
+.static-banner .left-text {
+    font-weight: bold; /* Жирний текст для "КБ-31" */
+}
+
+.static-banner .right-text {
+    font-style: italic; /* Курсивний текст для "ПІБ" */
+}
+
+/* Для всіх посилань на сайті */
+a {
+    transition: color 0.3s ease; /* Додаємо плавний перехід для зміни кольору */
+}
+
+/* Стилі для посилань */
+.white-banner a:hover,
+.text-item a:hover,
+.view-profile:hover,
+.static-banner .left-text:hover,
+.static-banner .right-text:hover {
+    color: #0056b3;  /* Колір для посилань при наведенні (приклад синій) */
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+/* Стилі для кнопки "Read More" */
+.white-banner a:hover {
+    color: #0056b3;  /* Синій колір при наведенні */
+    text-decoration: underline; /* Підкреслення */
+}
+
+/* Для банерів - змінюємо колір тексту при наведенні */
+.banner-text:hover {
+    color: #007bff;  /* Колір тексту змінюється на синій при наведенні */
+}
+
+/* Для кнопок */
+button:hover {
+    background-color: #0056b3;  /* Змінюємо фон кнопки при наведенні */
+}
